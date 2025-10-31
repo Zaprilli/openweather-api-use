@@ -118,9 +118,9 @@ function displayWeather(data){
       </div>
     </div>
     <div style="margin-top:10px;display:flex;gap:12px;flex-wrap:wrap">
-      <div style="background:#fff;border-radius:10px;padding:8px 10px;box-shadow:0 2px 6px rgba(0,0,0,0.04)"><strong>${hum}%</strong><div style="font-size:12px;color:#6b7280">Humidity</div></div>
-      <div style="background:#fff;border-radius:10px;padding:8px 10px;box-shadow:0 2px 6px rgba(0,0,0,0.04)"><strong>${wind} m/s</strong><div style="font-size:12px;color:#6b7280">Wind</div></div>
-      <div style="background:#fff;border-radius:10px;padding:8px 10px;box-shadow:0 2px 6px rgba(0,0,0,0.04)"><strong>${data.main?.pressure} hPa</strong><div style="font-size:12px;color:#6b7280">Pressure</div></div>
+      <div style="background:#fff;border-radius:10px;padding:8px 10px;box-shadow:0 2px 6px rgba(0,0,0,0.04)"><strong>${hum}%</strong><div style="font-size:12px;color:#6b7280">Чийгшил</div></div>
+      <div style="background:#fff;border-radius:10px;padding:8px 10px;box-shadow:0 2px 6px rgba(0,0,0,0.04)"><strong>${wind} m/s</strong><div style="font-size:12px;color:#6b7280">Салхи</div></div>
+      <div style="background:#fff;border-radius:10px;padding:8px 10px;box-shadow:0 2px 6px rgba(0,0,0,0.04)"><strong>${data.main?.pressure} hPa</strong><div style="font-size:12px;color:#6b7280">Агаарын даралт</div></div>
     </div>
   `;
 }
