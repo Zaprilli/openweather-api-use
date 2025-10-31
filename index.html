@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather info</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🌤 Цаг агаар — Монгол хотууд</h1>
+
+    <div class="controls">
+      <select id="citySelect" aria-label="Монгол хот сонгох">
+       value="" disabled selected>Хот сонгоно уу...</option>
+        <option value="Ulaanbaatar">Ulaanbaatar</option>
+        <option value="Erdenet">Erdenet</option>
+        <option value="Darkhan">Darkhan</option>
+        <option value="Choibalsan">Choibalsan</option>
+        <option value="Mörön">Murun</option>
+        <option value="Khovd">Khovd</option>
+        <option value="Ulaangom">Ulaangom</option>
+        <option value="Baruun-Urt">Baruun-Urt</option>
+        <option value="Tsetserleg">Tsetserleg</option>
+        <option value="Arvaikheer">Arvaikheer</option>
+        <option value="Sainshand">Sainshand</option>
+        <option value="Bayankhongor">Bayankhongor</option>
+        <option value="Zuunmod">Zuunmod</option>
+        <option value="Choibalsan">Choibalsan</option>
+        <option value="Altai">Altai</option>
+        <option value="Selenge">Selenge</option>
+      </select>
+
+      <button id="selectBtn" class="btn primary">Хайх</button>
+      <button id="locationBtn" class="btn green">📍 Миний байршил</button>
+    </div>
+
+    <div id="map" aria-hidden="false"></div>
+
+    <div id="weatherInfo" class="weather-card" aria-live="polite">
+      <p class="hint">Хот сонгоод "Хайх" товчийг дарна уу, эсвэл газрын зургаас байршил сонго.</p>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+ <!-- JS-ээр бөглөх эсвэл доорх аливаа урьдчилсан сонголт -->
+        <option 
